@@ -17,8 +17,16 @@ def checkLuhn(purportedCC):
     total = 0
     for i in card:
         total += i
-    
-    return total
 
-a = '4556737586899855'
-print(checkLuhn(a))
+    if (total + int(purportedCC[-1])) % 10 == 0:
+        return True
+    else:
+        return False
+
+
+a = '4556737586899856'
+
+if checkLuhn(a):
+    print('True')
+else:
+    print('False')
