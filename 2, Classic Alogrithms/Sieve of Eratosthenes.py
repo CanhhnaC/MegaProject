@@ -1,8 +1,3 @@
-from math import sqrt
-
-# Use number
-
-
 def sieveOfEratosthenes(n):
     arr = []
     for i in range(2, n + 1):
